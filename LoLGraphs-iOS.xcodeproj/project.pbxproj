@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */; };
+		5F33FE8D294ACD1C00F42FC6 /* ChampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */; };
 		5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */; };
-		5FD083DF294983690030CD40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DE294983690030CD40 /* ContentView.swift */; };
+		5FD083DF294983690030CD40 /* ListChamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DE294983690030CD40 /* ListChamps.swift */; };
 		5FD083E12949836A0030CD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD083E02949836A0030CD40 /* Assets.xcassets */; };
 		5FD083E52949836A0030CD40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD083E42949836A0030CD40 /* Preview Assets.xcassets */; };
+		5FD083EC29498A360030CD40 /* ListChampsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */; };
+		5FD083EE29498A750030CD40 /* ChampListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083ED29498A750030CD40 /* ChampListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampListModelResponse.swift; sourceTree = "<group>"; };
+		5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampService.swift; sourceTree = "<group>"; };
+		5F96EBF5294A8175004B3195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FD083D9294983690030CD40 /* LoLGraphs-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoLGraphs-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLGraphs_iOSApp.swift; sourceTree = "<group>"; };
-		5FD083DE294983690030CD40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FD083DE294983690030CD40 /* ListChamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChamps.swift; sourceTree = "<group>"; };
 		5FD083E02949836A0030CD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD083E22949836A0030CD40 /* LoLGraphs_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoLGraphs_iOS.entitlements; sourceTree = "<group>"; };
 		5FD083E42949836A0030CD40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChampsViewModel.swift; sourceTree = "<group>"; };
+		5FD083ED29498A750030CD40 /* ChampListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F33FE83294ACC8300F42FC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FD083DE294983690030CD40 /* ListChamps.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F33FE84294ACC8A00F42FC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F33FE85294ACC9500F42FC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FD083ED29498A750030CD40 /* ChampListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F33FE86294ACCAE00F42FC6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		5F33FE87294ACCCC00F42FC6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5F33FE88294ACCD500F42FC6 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5F33FE88294ACCD500F42FC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F33FE8B294ACD0100F42FC6 /* ChampService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5F33FE8B294ACD0100F42FC6 /* ChampService */ = {
+			isa = PBXGroup;
+			children = (
+				5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */,
+			);
+			path = ChampService;
+			sourceTree = "<group>";
+		};
 		5FD083D0294983690030CD40 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +117,9 @@
 		5FD083DB294983690030CD40 /* LoLGraphs-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5F96EBF5294A8175004B3195 /* Info.plist */,
+				5FD083EF29498D330030CD40 /* ListChamps */,
 				5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */,
-				5FD083DE294983690030CD40 /* ContentView.swift */,
 				5FD083E02949836A0030CD40 /* Assets.xcassets */,
 				5FD083E22949836A0030CD40 /* LoLGraphs_iOS.entitlements */,
 				5FD083E32949836A0030CD40 /* Preview Content */,
@@ -67,6 +133,18 @@
 				5FD083E42949836A0030CD40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5FD083EF29498D330030CD40 /* ListChamps */ = {
+			isa = PBXGroup;
+			children = (
+				5F33FE87294ACCCC00F42FC6 /* Data */,
+				5F33FE86294ACCAE00F42FC6 /* DataModel */,
+				5F33FE85294ACC9500F42FC6 /* Model */,
+				5F33FE84294ACC8A00F42FC6 /* ViewModel */,
+				5F33FE83294ACC8300F42FC6 /* View */,
+			);
+			path = ListChamps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD083DF294983690030CD40 /* ContentView.swift in Sources */,
+				5FD083EC29498A360030CD40 /* ListChampsViewModel.swift in Sources */,
+				5FD083EE29498A750030CD40 /* ChampListModel.swift in Sources */,
+				5FD083DF294983690030CD40 /* ListChamps.swift in Sources */,
 				5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */,
+				5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */,
+				5F33FE8D294ACD1C00F42FC6 /* ChampService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +351,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoLGraphs-iOS/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -287,7 +370,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LoLGraphs-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,6 +392,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoLGraphs-iOS/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -325,7 +411,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LoLGraphs-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
