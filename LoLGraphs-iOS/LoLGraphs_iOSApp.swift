@@ -11,7 +11,7 @@ import SwiftUI
 struct LoLGraphs_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListChamps()
         }
     }
 }
