@@ -4,7 +4,6 @@
 //
 //  Created by Gabriel Sanchez Peraza on 14/12/22.
 //
-
 import Foundation
 struct ChampListModelResponse:Decodable {
     let champDictionary: Dictionary<String, ChampModelResponse>

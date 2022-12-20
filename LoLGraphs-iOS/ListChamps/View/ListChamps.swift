@@ -14,15 +14,15 @@ struct ListChamps: View {
         
         NavigationView {
             VStack {
-                
                 List(viewModel.filter, id: \.id) { champ in
                     NavigationLink(destination: {
-                        Text(champ.nameChamp)
+                        ChampDetail(id: champ.nameChamp)
                     }, label: {
                         HStack {
                             AsyncImage(url: URL(string: "http://ddragon.leagueoflegends.com/cdn/12.12.1/img/champion/\(champ.nameChamp).png"))
                             
                                 .fixedSize()
+                                .cornerRadius(30, corners: .bottomRight)
                             
                             Text(champ.nameChamp)
                                 .font(.headline)
@@ -31,6 +31,7 @@ struct ListChamps: View {
                         .padding(.vertical)
                     })
                 }
+                .listStyle(.plain)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .onAppear{

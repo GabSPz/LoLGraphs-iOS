@@ -8,11 +8,11 @@
 import Foundation
 
 class ChampService {
-    
+
     func getListChamps(completion: @escaping (ChampListModelResponse?) -> Void) {
-        let urlSession = URLSession.shared
         let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion.json")
-        
+        let urlSession = URLSession.shared
+
         urlSession.dataTask(with: url!) { data, response, error in
             
             if let data = data {
@@ -20,5 +20,20 @@ class ChampService {
                 completion(champ)
             }
         }.resume()
+    }
+    
+    func getOneChamp(id: String, completion: @escaping (ChampDetailListResponse?) -> Void) {
+        let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion/\(id).json")
+        let urlSession = URLSession.shared
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .useDefaultKeys
+        urlSession.dataTask(with: url!) { data, response, error in
+            
+            if let data = data {
+                let champ = try? decoder.decode(ChampDetailListResponse.self, from: data)
+                completion(champ)
+            }
+        }
+        .resume()
     }
 }
