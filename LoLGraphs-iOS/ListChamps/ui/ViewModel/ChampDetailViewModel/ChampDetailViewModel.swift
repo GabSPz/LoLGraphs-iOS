@@ -9,7 +9,7 @@ import Foundation
 
 class ChampDetailViewModel: ObservableObject {
     @Published var model: ChampDetailModel = ChampDetailModel.empty
-    let champService = ChampService()
+    let champService: ChampServiceProtocol = ChampServiceMock()
     
     func getChamp(id: String) {
         

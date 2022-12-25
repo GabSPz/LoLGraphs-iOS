@@ -7,9 +7,15 @@
 
 import SwiftUI
 
+protocol ChampIdProtocol {
+    func onChampSelectec()
+}
+
 struct ListChamps: View {
     @StateObject var viewModel = ListChampsViewModel()
     @State var searchText = ""
+    
+    var delegate : ChampIdProtocol!
     var body: some View {
         
         NavigationView {

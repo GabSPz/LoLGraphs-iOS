@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ChampService {
+class ChampService: ChampServiceProtocol {
 
     func getListChamps(completion: @escaping (ChampListModelResponse?) -> Void) {
         let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion.json")
