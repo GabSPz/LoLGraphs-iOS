@@ -16,6 +16,8 @@
 		5FA80F8B2954FE58002C8A9C /* ChampServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA80F8A2954FE58002C8A9C /* ChampServiceTest.swift */; };
 		5FC7DF852956380C0015F3B5 /* ChampServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */; };
 		5FC7DF87295638600015F3B5 /* ChampServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */; };
+		5FCECCAD295A30790078803A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCECCAC295A30790078803A /* SplashScreen.swift */; };
+		5FCECCB3295A3F7A0078803A /* SplashMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCECCB2295A3F7A0078803A /* SplashMain.storyboard */; };
 		5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */; };
 		5FD083DF294983690030CD40 /* ListChamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DE294983690030CD40 /* ListChamps.swift */; };
 		5FD083E12949836A0030CD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD083E02949836A0030CD40 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		5FA80F8A2954FE58002C8A9C /* ChampServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceTest.swift; sourceTree = "<group>"; };
 		5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceProtocol.swift; sourceTree = "<group>"; };
 		5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceMock.swift; sourceTree = "<group>"; };
+		5FCECCAC295A30790078803A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		5FCECCB2295A3F7A0078803A /* SplashMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashMain.storyboard; sourceTree = "<group>"; };
 		5FD083D9294983690030CD40 /* LoLGraphs-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoLGraphs-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLGraphs_iOSApp.swift; sourceTree = "<group>"; };
 		5FD083DE294983690030CD40 /* ListChamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChamps.swift; sourceTree = "<group>"; };
@@ -77,19 +81,11 @@
 		5F33FE83294ACC8300F42FC6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5FCECCAB295A304B0078803A /* splashScreen */,
+				5FCECCAA295A30020078803A /* ListChampsView */,
 				5F33FE8E294B897F00F42FC6 /* ChampDetail */,
-				5FD083DE294983690030CD40 /* ListChamps.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		5F33FE84294ACC8A00F42FC6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5F33FE91294B8F2800F42FC6 /* ChampDetailViewModel */,
-				5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5F33FE85294ACC9500F42FC6 /* Model */ = {
@@ -140,23 +136,15 @@
 		5F33FE8E294B897F00F42FC6 /* ChampDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5F33FE92294B8F4400F42FC6 /* ChampDetailViewModel.swift */,
 				5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */,
 			);
 			path = ChampDetail;
 			sourceTree = "<group>";
 		};
-		5F33FE91294B8F2800F42FC6 /* ChampDetailViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5F33FE92294B8F4400F42FC6 /* ChampDetailViewModel.swift */,
-			);
-			path = ChampDetailViewModel;
-			sourceTree = "<group>";
-		};
 		5F77F4B42959025600D06064 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				5F33FE84294ACC8A00F42FC6 /* ViewModel */,
 				5F33FE83294ACC8300F42FC6 /* View */,
 			);
 			path = ui;
@@ -186,9 +174,27 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5FCECCAA295A30020078803A /* ListChampsView */ = {
+			isa = PBXGroup;
+			children = (
+				5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */,
+				5FD083DE294983690030CD40 /* ListChamps.swift */,
+			);
+			path = ListChampsView;
+			sourceTree = "<group>";
+		};
+		5FCECCAB295A304B0078803A /* splashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5FCECCAC295A30790078803A /* SplashScreen.swift */,
+			);
+			path = splashScreen;
+			sourceTree = "<group>";
+		};
 		5FD083D0294983690030CD40 = {
 			isa = PBXGroup;
 			children = (
+				5FCECCB2295A3F7A0078803A /* SplashMain.storyboard */,
 				5FD083DB294983690030CD40 /* LoLGraphs-iOS */,
 				5FA80F822954FE18002C8A9C /* LoLGraphs-iOSTests */,
 				5FD083DA294983690030CD40 /* Products */,
@@ -324,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCECCB3295A3F7A0078803A /* SplashMain.storyboard in Resources */,
 				5FD083E52949836A0030CD40 /* Preview Assets.xcassets in Resources */,
 				5FD083E12949836A0030CD40 /* Assets.xcassets in Resources */,
 			);
@@ -351,6 +358,7 @@
 				5FD083DF294983690030CD40 /* ListChamps.swift in Sources */,
 				5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */,
 				5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */,
+				5FCECCAD295A30790078803A /* SplashScreen.swift in Sources */,
 				5F33FE93294B8F4400F42FC6 /* ChampDetailViewModel.swift in Sources */,
 				5F33FE97294B910200F42FC6 /* ChampDetailResponse.swift in Sources */,
 				5FC7DF87295638600015F3B5 /* ChampServiceMock.swift in Sources */,
@@ -553,6 +561,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashMain.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -594,6 +603,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashMain.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
