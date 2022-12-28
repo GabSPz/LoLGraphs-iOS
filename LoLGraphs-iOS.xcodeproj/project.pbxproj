@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F049746295CD6280091E269 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F049745295CD6280091E269 /* Constant.swift */; };
+		5F049748295CF6DD0091E269 /* ChampDetailViewModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F049747295CF6DD0091E269 /* ChampDetailViewModelResponse.swift */; };
 		5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */; };
 		5F33FE8D294ACD1C00F42FC6 /* ChampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */; };
 		5F33FE90294B89A000F42FC6 /* ChampDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */; };
 		5F33FE93294B8F4400F42FC6 /* ChampDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE92294B8F4400F42FC6 /* ChampDetailViewModel.swift */; };
 		5F33FE95294B8FD500F42FC6 /* ChampDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE94294B8FD500F42FC6 /* ChampDetailModel.swift */; };
 		5F33FE97294B910200F42FC6 /* ChampDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE96294B910200F42FC6 /* ChampDetailResponse.swift */; };
+		5FA80F8B2954FE58002C8A9C /* ListChampsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA80F8A2954FE58002C8A9C /* ListChampsViewModelTest.swift */; };
+		5FC7DF852956380C0015F3B5 /* ChampServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */; };
+		5FC7DF87295638600015F3B5 /* ChampServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */; };
+		5FCECCAD295A30790078803A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCECCAC295A30790078803A /* SplashScreen.swift */; };
+		5FCECCB3295A3F7A0078803A /* SplashMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCECCB2295A3F7A0078803A /* SplashMain.storyboard */; };
 		5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */; };
 		5FD083DF294983690030CD40 /* ListChamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083DE294983690030CD40 /* ListChamps.swift */; };
 		5FD083E12949836A0030CD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD083E02949836A0030CD40 /* Assets.xcassets */; };
@@ -21,7 +28,19 @@
 		5FD083EE29498A750030CD40 /* ChampListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD083ED29498A750030CD40 /* ChampListModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5FA80F852954FE18002C8A9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FD083D1294983690030CD40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FD083D8294983690030CD40;
+			remoteInfo = "LoLGraphs-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5F049745295CD6280091E269 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5F049747295CF6DD0091E269 /* ChampDetailViewModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetailViewModelResponse.swift; sourceTree = "<group>"; };
 		5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampListModelResponse.swift; sourceTree = "<group>"; };
 		5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampService.swift; sourceTree = "<group>"; };
 		5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetail.swift; sourceTree = "<group>"; };
@@ -29,6 +48,12 @@
 		5F33FE94294B8FD500F42FC6 /* ChampDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetailModel.swift; sourceTree = "<group>"; };
 		5F33FE96294B910200F42FC6 /* ChampDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetailResponse.swift; sourceTree = "<group>"; };
 		5F96EBF5294A8175004B3195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5FA80F812954FE18002C8A9C /* LoLGraphs-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoLGraphs-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA80F8A2954FE58002C8A9C /* ListChampsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChampsViewModelTest.swift; sourceTree = "<group>"; };
+		5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceProtocol.swift; sourceTree = "<group>"; };
+		5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceMock.swift; sourceTree = "<group>"; };
+		5FCECCAC295A30790078803A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		5FCECCB2295A3F7A0078803A /* SplashMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashMain.storyboard; sourceTree = "<group>"; };
 		5FD083D9294983690030CD40 /* LoLGraphs-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoLGraphs-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD083DC294983690030CD40 /* LoLGraphs_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLGraphs_iOSApp.swift; sourceTree = "<group>"; };
 		5FD083DE294983690030CD40 /* ListChamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChamps.swift; sourceTree = "<group>"; };
@@ -40,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5FA80F7E2954FE18002C8A9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FD083D6294983690030CD40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,19 +85,11 @@
 		5F33FE83294ACC8300F42FC6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5FCECCAB295A304B0078803A /* splashScreen */,
+				5FCECCAA295A30020078803A /* ListChampsView */,
 				5F33FE8E294B897F00F42FC6 /* ChampDetail */,
-				5FD083DE294983690030CD40 /* ListChamps.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		5F33FE84294ACC8A00F42FC6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5F33FE91294B8F2800F42FC6 /* ChampDetailViewModel */,
-				5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5F33FE85294ACC9500F42FC6 /* Model */ = {
@@ -86,12 +110,14 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
-		5F33FE87294ACCCC00F42FC6 /* Data */ = {
+		5F33FE87294ACCCC00F42FC6 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				5F33FE86294ACCAE00F42FC6 /* DataModel */,
+				5FC7DF83295637D90015F3B5 /* Protocols */,
 				5F33FE88294ACCD500F42FC6 /* Services */,
 			);
-			path = Data;
+			path = data;
 			sourceTree = "<group>";
 		};
 		5F33FE88294ACCD500F42FC6 /* Services */ = {
@@ -106,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */,
+				5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */,
 			);
 			path = ChampService;
 			sourceTree = "<group>";
@@ -113,23 +140,68 @@
 		5F33FE8E294B897F00F42FC6 /* ChampDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5F33FE92294B8F4400F42FC6 /* ChampDetailViewModel.swift */,
 				5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */,
 			);
 			path = ChampDetail;
 			sourceTree = "<group>";
 		};
-		5F33FE91294B8F2800F42FC6 /* ChampDetailViewModel */ = {
+		5F77F4B42959025600D06064 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				5F33FE92294B8F4400F42FC6 /* ChampDetailViewModel.swift */,
+				5F33FE83294ACC8300F42FC6 /* View */,
 			);
-			path = ChampDetailViewModel;
+			path = ui;
+			sourceTree = "<group>";
+		};
+		5F77F4B52959026600D06064 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				5F33FE85294ACC9500F42FC6 /* Model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		5FA80F822954FE18002C8A9C /* LoLGraphs-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FA80F8A2954FE58002C8A9C /* ListChampsViewModelTest.swift */,
+				5F049747295CF6DD0091E269 /* ChampDetailViewModelResponse.swift */,
+			);
+			path = "LoLGraphs-iOSTests";
+			sourceTree = "<group>";
+		};
+		5FC7DF83295637D90015F3B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5FCECCAA295A30020078803A /* ListChampsView */ = {
+			isa = PBXGroup;
+			children = (
+				5FD083EB29498A360030CD40 /* ListChampsViewModel.swift */,
+				5FD083DE294983690030CD40 /* ListChamps.swift */,
+			);
+			path = ListChampsView;
+			sourceTree = "<group>";
+		};
+		5FCECCAB295A304B0078803A /* splashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5FCECCAC295A30790078803A /* SplashScreen.swift */,
+			);
+			path = splashScreen;
 			sourceTree = "<group>";
 		};
 		5FD083D0294983690030CD40 = {
 			isa = PBXGroup;
 			children = (
+				5FCECCB2295A3F7A0078803A /* SplashMain.storyboard */,
 				5FD083DB294983690030CD40 /* LoLGraphs-iOS */,
+				5FA80F822954FE18002C8A9C /* LoLGraphs-iOSTests */,
 				5FD083DA294983690030CD40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				5FD083D9294983690030CD40 /* LoLGraphs-iOS.app */,
+				5FA80F812954FE18002C8A9C /* LoLGraphs-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,11 +239,10 @@
 		5FD083EF29498D330030CD40 /* ListChamps */ = {
 			isa = PBXGroup;
 			children = (
-				5F33FE87294ACCCC00F42FC6 /* Data */,
-				5F33FE86294ACCAE00F42FC6 /* DataModel */,
-				5F33FE85294ACC9500F42FC6 /* Model */,
-				5F33FE84294ACC8A00F42FC6 /* ViewModel */,
-				5F33FE83294ACC8300F42FC6 /* View */,
+				5F77F4B52959026600D06064 /* domain */,
+				5F77F4B42959025600D06064 /* ui */,
+				5F33FE87294ACCCC00F42FC6 /* data */,
+				5F049745295CD6280091E269 /* Constant.swift */,
 			);
 			path = ListChamps;
 			sourceTree = "<group>";
@@ -178,6 +250,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5FA80F802954FE18002C8A9C /* LoLGraphs-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA80F892954FE18002C8A9C /* Build configuration list for PBXNativeTarget "LoLGraphs-iOSTests" */;
+			buildPhases = (
+				5FA80F7D2954FE18002C8A9C /* Sources */,
+				5FA80F7E2954FE18002C8A9C /* Frameworks */,
+				5FA80F7F2954FE18002C8A9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA80F862954FE18002C8A9C /* PBXTargetDependency */,
+			);
+			name = "LoLGraphs-iOSTests";
+			productName = "LoLGraphs-iOSTests";
+			productReference = 5FA80F812954FE18002C8A9C /* LoLGraphs-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5FD083D8294983690030CD40 /* LoLGraphs-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD083E82949836A0030CD40 /* Build configuration list for PBXNativeTarget "LoLGraphs-iOS" */;
@@ -205,6 +295,11 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					5FA80F802954FE18002C8A9C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = 5FD083D8294983690030CD40;
+					};
 					5FD083D8294983690030CD40 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -224,15 +319,24 @@
 			projectRoot = "";
 			targets = (
 				5FD083D8294983690030CD40 /* LoLGraphs-iOS */,
+				5FA80F802954FE18002C8A9C /* LoLGraphs-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5FA80F7F2954FE18002C8A9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FD083D7294983690030CD40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCECCB3295A3F7A0078803A /* SplashMain.storyboard in Resources */,
 				5FD083E52949836A0030CD40 /* Preview Assets.xcassets in Resources */,
 				5FD083E12949836A0030CD40 /* Assets.xcassets in Resources */,
 			);
@@ -241,6 +345,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5FA80F7D2954FE18002C8A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F049748295CF6DD0091E269 /* ChampDetailViewModelResponse.swift in Sources */,
+				5FA80F8B2954FE58002C8A9C /* ListChampsViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FD083D5294983690030CD40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,11 +361,15 @@
 				5FD083EC29498A360030CD40 /* ListChampsViewModel.swift in Sources */,
 				5FD083EE29498A750030CD40 /* ChampListModel.swift in Sources */,
 				5F33FE95294B8FD500F42FC6 /* ChampDetailModel.swift in Sources */,
+				5FC7DF852956380C0015F3B5 /* ChampServiceProtocol.swift in Sources */,
 				5FD083DF294983690030CD40 /* ListChamps.swift in Sources */,
 				5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */,
 				5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */,
+				5F049746295CD6280091E269 /* Constant.swift in Sources */,
+				5FCECCAD295A30790078803A /* SplashScreen.swift in Sources */,
 				5F33FE93294B8F4400F42FC6 /* ChampDetailViewModel.swift in Sources */,
 				5F33FE97294B910200F42FC6 /* ChampDetailResponse.swift in Sources */,
+				5FC7DF87295638600015F3B5 /* ChampServiceMock.swift in Sources */,
 				5F33FE8D294ACD1C00F42FC6 /* ChampService.swift in Sources */,
 				5F33FE90294B89A000F42FC6 /* ChampDetail.swift in Sources */,
 			);
@@ -260,7 +377,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5FA80F862954FE18002C8A9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FD083D8294983690030CD40 /* LoLGraphs-iOS */;
+			targetProxy = 5FA80F852954FE18002C8A9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5FA80F872954FE18002C8A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 289S86LZ6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LoLGraphs-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoLGraphs-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoLGraphs-iOS";
+			};
+			name = Debug;
+		};
+		5FA80F882954FE18002C8A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 289S86LZ6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LoLGraphs-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoLGraphs-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoLGraphs-iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		5FD083E62949836A0030CD40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +569,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashMain.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -431,6 +611,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashMain.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -455,6 +636,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5FA80F892954FE18002C8A9C /* Build configuration list for PBXNativeTarget "LoLGraphs-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA80F872954FE18002C8A9C /* Debug */,
+				5FA80F882954FE18002C8A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5FD083D4294983690030CD40 /* Build configuration list for PBXProject "LoLGraphs-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

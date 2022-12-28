@@ -3,4 +3,54 @@
    uuid = "07A0B4E4-1B47-424A-B296-0015363A7EAD"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "810FD1F0-4BF7-4850-84E5-27352AB18255"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoLGraphs-iOS/ListChamps/ui/View/ListChampsView/ListChampsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "810FD1F0-4BF7-4850-84E5-27352AB18255 - d7442444e162b431"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;LoLGraphs_iOS.ChampListModelResponse&gt;) -&gt; () in LoLGraphs_iOS.ListChampsViewModel.getList() -&gt; ()"
+                  moduleName = "LoLGraphs-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielsp/Documents/Development/iOS/Projects/Swiftui/Lol/LoLGraphs-iOS/ListChamps/ui/View/ListChampsView/ListChampsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "810FD1F0-4BF7-4850-84E5-27352AB18255 - d7442444e162b431"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;LoLGraphs_iOS.ChampListModelResponse&gt;) -&gt; () in LoLGraphs_iOS.ListChampsViewModel.getList() -&gt; ()"
+                  moduleName = "LoLGraphs-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielsp/Documents/Development/iOS/Projects/Swiftui/Lol/LoLGraphs-iOS/ListChamps/ui/View/ListChampsView/ListChampsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -9,7 +9,7 @@ import SwiftUI
 import QuickLook
 struct ChampDetail: View {
     let id: String
-    @StateObject private var viewModel = ChampDetailViewModel()
+    @StateObject private var viewModel: ChampDetailViewModel = .build()
     @State private var isClicking = false
     @State private var skinName = ""
     @State private var zoom = 1.0
@@ -23,32 +23,22 @@ struct ChampDetail: View {
                         imgChamp
                         loreChamp
                         skinsChamps
-                        
                     }
                     .padding()
-                  
-
                 }
                 if isClicking {
                     VStack {
                         Spacer()
                         skinNameToast
-
                     }
-                        
                 }
             }
-
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     nameChamp
-                        
-                        
                 }
             }
-            
         }
-        
         .onAppear{
             viewModel.getChamp(id: id)
         }
@@ -89,7 +79,6 @@ struct ChampDetail: View {
                             .scaledToFit()
                             .scaleEffect(zoom)
                             .onTapGesture {
-                                url = URL(string:"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/\(id)_\(skin.num).jpg")
                                 skinName = skin.skinName
                                 isClicking = true
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -98,7 +87,6 @@ struct ChampDetail: View {
                                 
                                 
                             }
-                            .quickLookPreview($url)
                         
                     } placeholder: {
                         ProgressView()

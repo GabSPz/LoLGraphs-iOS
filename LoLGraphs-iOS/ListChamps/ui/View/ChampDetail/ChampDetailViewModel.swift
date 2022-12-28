@@ -9,13 +9,17 @@ import Foundation
 
 class ChampDetailViewModel: ObservableObject {
     @Published var model: ChampDetailModel = ChampDetailModel.empty
-    let champService = ChampService()
+    private var champService: ChampServiceProtocol
+    
+    init( champService: ChampServiceProtocol) {
+        self.champService = champService
+    }
     
     func getChamp(id: String) {
         
         champService.getOneChamp(id: id) { champResponse in
             
-            if let champ = champResponse?.data[id] {
+            if let champ = champResponse?.data.values.first{
                 var skinsModel: [Skins] = []
                 
                 champ.skins.forEach { skinsRes in
@@ -29,9 +33,13 @@ class ChampDetailViewModel: ObservableObject {
                     lore: champ.lore,
                     skins: skinsModel
                     )
-                print(String(describing: self.model.skins))
-
             }
         }
+    }
+}
+
+extension ChampDetailViewModel {
+    static func build()-> ChampDetailViewModel{
+        return ChampDetailViewModel(champService: Constant.isMock ? ChampServiceMock() : ChampService())
     }
 }

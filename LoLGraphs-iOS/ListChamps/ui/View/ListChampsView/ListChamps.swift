@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+protocol ChampIdProtocol {
+    func onChampSelectec()
+}
+
 struct ListChamps: View {
-    @StateObject var viewModel = ListChampsViewModel()
+    @StateObject var viewModel: ListChampsViewModel = .build()
     @State var searchText = ""
+    
     var body: some View {
         
         NavigationView {
@@ -20,15 +25,14 @@ struct ListChamps: View {
                     }, label: {
                         HStack {
                             AsyncImage(url: URL(string: "http://ddragon.leagueoflegends.com/cdn/12.12.1/img/champion/\(champ.nameChamp).png"))
-                            
-                                .fixedSize()
-                                .cornerRadius(30, corners: .bottomRight)
+                                .scaledToFit()
                             
                             Text(champ.nameChamp)
                                 .font(.headline)
                         }
                         .frame(maxHeight: 70)
                         .padding(.vertical)
+                        .cornerRadius(8)
                     })
                 }
                 .listStyle(.plain)

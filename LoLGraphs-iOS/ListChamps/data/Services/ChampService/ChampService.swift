@@ -7,10 +7,10 @@
 
 import Foundation
 
-class ChampService {
+class ChampService: ChampServiceProtocol {
 
     func getListChamps(completion: @escaping (ChampListModelResponse?) -> Void) {
-        let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion.json")
+        let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.23.1/data/es_MX/champion.json")
         let urlSession = URLSession.shared
 
         urlSession.dataTask(with: url!) { data, response, error in
@@ -23,7 +23,7 @@ class ChampService {
     }
     
     func getOneChamp(id: String, completion: @escaping (ChampDetailListResponse?) -> Void) {
-        let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/es_MX/champion/\(id).json")
+        let url = URL(string: "http://ddragon.leagueoflegends.com/cdn/12.23.1/data/es_MX/champion/\(id).json")
         let urlSession = URLSession.shared
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .useDefaultKeys
