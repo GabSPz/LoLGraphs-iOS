@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "810FD1F0-4BF7-4850-84E5-27352AB18255"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoLGraphs-iOS/ListChamps/ui/View/ListChampsView/ListChampsViewModel.swift"

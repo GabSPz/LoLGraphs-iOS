@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5F049746295CD6280091E269 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F049745295CD6280091E269 /* Constant.swift */; };
+		5F049748295CF6DD0091E269 /* ChampDetailViewModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F049747295CF6DD0091E269 /* ChampDetailViewModelResponse.swift */; };
 		5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */; };
 		5F33FE8D294ACD1C00F42FC6 /* ChampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */; };
 		5F33FE90294B89A000F42FC6 /* ChampDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */; };
 		5F33FE93294B8F4400F42FC6 /* ChampDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE92294B8F4400F42FC6 /* ChampDetailViewModel.swift */; };
 		5F33FE95294B8FD500F42FC6 /* ChampDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE94294B8FD500F42FC6 /* ChampDetailModel.swift */; };
 		5F33FE97294B910200F42FC6 /* ChampDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE96294B910200F42FC6 /* ChampDetailResponse.swift */; };
-		5FA80F8B2954FE58002C8A9C /* ChampServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA80F8A2954FE58002C8A9C /* ChampServiceTest.swift */; };
+		5FA80F8B2954FE58002C8A9C /* ListChampsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA80F8A2954FE58002C8A9C /* ListChampsViewModelTest.swift */; };
 		5FC7DF852956380C0015F3B5 /* ChampServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */; };
 		5FC7DF87295638600015F3B5 /* ChampServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */; };
 		5FCECCAD295A30790078803A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCECCAC295A30790078803A /* SplashScreen.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5F049745295CD6280091E269 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5F049747295CF6DD0091E269 /* ChampDetailViewModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetailViewModelResponse.swift; sourceTree = "<group>"; };
 		5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampListModelResponse.swift; sourceTree = "<group>"; };
 		5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampService.swift; sourceTree = "<group>"; };
 		5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetail.swift; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 		5F33FE96294B910200F42FC6 /* ChampDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetailResponse.swift; sourceTree = "<group>"; };
 		5F96EBF5294A8175004B3195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FA80F812954FE18002C8A9C /* LoLGraphs-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoLGraphs-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FA80F8A2954FE58002C8A9C /* ChampServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceTest.swift; sourceTree = "<group>"; };
+		5FA80F8A2954FE58002C8A9C /* ListChampsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChampsViewModelTest.swift; sourceTree = "<group>"; };
 		5FC7DF842956380C0015F3B5 /* ChampServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceProtocol.swift; sourceTree = "<group>"; };
 		5FC7DF86295638600015F3B5 /* ChampServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampServiceMock.swift; sourceTree = "<group>"; };
 		5FCECCAC295A30790078803A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -163,7 +165,8 @@
 		5FA80F822954FE18002C8A9C /* LoLGraphs-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				5FA80F8A2954FE58002C8A9C /* ChampServiceTest.swift */,
+				5FA80F8A2954FE58002C8A9C /* ListChampsViewModelTest.swift */,
+				5F049747295CF6DD0091E269 /* ChampDetailViewModelResponse.swift */,
 			);
 			path = "LoLGraphs-iOSTests";
 			sourceTree = "<group>";
@@ -346,7 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA80F8B2954FE58002C8A9C /* ChampServiceTest.swift in Sources */,
+				5F049748295CF6DD0091E269 /* ChampDetailViewModelResponse.swift in Sources */,
+				5FA80F8B2954FE58002C8A9C /* ListChampsViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

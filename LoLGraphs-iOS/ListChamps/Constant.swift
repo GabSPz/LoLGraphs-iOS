@@ -9,13 +9,8 @@ import Foundation
 
 class Constant {
     static let isMock = true
-    static let champListMock = """
-    {
-    "data":{
-        "Ahri":{
-            "id": "Ahri",
-            "name": "Ahri"
-        }
-    }
-    """.data(using: .utf8)!
+    static let champListMock = [
+        "Akali": ChampModelResponse(id: "Akali", nameChamp: "Akali"),
+        "Zed": ChampModelResponse(id: "Zed", nameChamp: "Zed")
+    ]
 }
