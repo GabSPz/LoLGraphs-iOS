@@ -10,14 +10,12 @@ import Foundation
 class ListChampsViewModel: ObservableObject {
     @Published var model: [ChampModel] = [] {didSet{filter = model}}
     @Published var filter: [ChampModel] = []
-    var edadMin: Int {
-        if model.isEmpty{
-            return 6
-        }
-        return 18
-    }
     @Published var isLoading: Bool = false
-    var service = ChampService()
+    var service: ChampServiceProtocol
+    
+    init(service: ChampServiceProtocol) {
+        self.service = service
+    }
     
     func getList() {
         service.getListChamps { listResponse in
@@ -33,4 +31,10 @@ class ListChampsViewModel: ObservableObject {
         }
     }
     
+}
+
+extension ListChampsViewModel {
+    static func build()-> ListChampsViewModel{
+        return ListChampsViewModel(service: Constant.isMock ? ChampServiceMock() : ChampService())
+    }
 }

@@ -12,10 +12,9 @@ protocol ChampIdProtocol {
 }
 
 struct ListChamps: View {
-    @StateObject var viewModel = ListChampsViewModel()
+    @StateObject var viewModel: ListChampsViewModel = .build()
     @State var searchText = ""
     
-    var delegate : ChampIdProtocol!
     var body: some View {
         
         NavigationView {

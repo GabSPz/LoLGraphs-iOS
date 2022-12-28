@@ -9,7 +9,7 @@ import SwiftUI
 import QuickLook
 struct ChampDetail: View {
     let id: String
-    @StateObject private var viewModel = ChampDetailViewModel()
+    @StateObject private var viewModel: ChampDetailViewModel = .build()
     @State private var isClicking = false
     @State private var skinName = ""
     @State private var zoom = 1.0

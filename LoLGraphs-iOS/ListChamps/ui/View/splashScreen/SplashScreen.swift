@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SplashScreen: View {
+    
     @State private var size = 0.8
     @State private var opacity = 0.5
     @State private var isActive = true

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F049746295CD6280091E269 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F049745295CD6280091E269 /* Constant.swift */; };
 		5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */; };
 		5F33FE8D294ACD1C00F42FC6 /* ChampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */; };
 		5F33FE90294B89A000F42FC6 /* ChampDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F049745295CD6280091E269 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5F33FE81294ACB9F00F42FC6 /* ChampListModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampListModelResponse.swift; sourceTree = "<group>"; };
 		5F33FE8C294ACD1C00F42FC6 /* ChampService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampService.swift; sourceTree = "<group>"; };
 		5F33FE8F294B89A000F42FC6 /* ChampDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetail.swift; sourceTree = "<group>"; };
@@ -106,14 +108,14 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
-		5F33FE87294ACCCC00F42FC6 /* Data */ = {
+		5F33FE87294ACCCC00F42FC6 /* data */ = {
 			isa = PBXGroup;
 			children = (
 				5F33FE86294ACCAE00F42FC6 /* DataModel */,
 				5FC7DF83295637D90015F3B5 /* Protocols */,
 				5F33FE88294ACCD500F42FC6 /* Services */,
 			);
-			path = Data;
+			path = data;
 			sourceTree = "<group>";
 		};
 		5F33FE88294ACCD500F42FC6 /* Services */ = {
@@ -236,7 +238,8 @@
 			children = (
 				5F77F4B52959026600D06064 /* domain */,
 				5F77F4B42959025600D06064 /* ui */,
-				5F33FE87294ACCCC00F42FC6 /* Data */,
+				5F33FE87294ACCCC00F42FC6 /* data */,
+				5F049745295CD6280091E269 /* Constant.swift */,
 			);
 			path = ListChamps;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				5FD083DF294983690030CD40 /* ListChamps.swift in Sources */,
 				5FD083DD294983690030CD40 /* LoLGraphs_iOSApp.swift in Sources */,
 				5F33FE82294ACB9F00F42FC6 /* ChampListModelResponse.swift in Sources */,
+				5F049746295CD6280091E269 /* Constant.swift in Sources */,
 				5FCECCAD295A30790078803A /* SplashScreen.swift in Sources */,
 				5F33FE93294B8F4400F42FC6 /* ChampDetailViewModel.swift in Sources */,
 				5F33FE97294B910200F42FC6 /* ChampDetailResponse.swift in Sources */,

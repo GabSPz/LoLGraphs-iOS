@@ -8,7 +8,8 @@
 import Foundation
 class ChampServiceMock: ChampServiceProtocol{
     func getListChamps(completion: @escaping (ChampListModelResponse?) -> Void) {
-        completion(ChampListModelResponse(champDictionary: [:]))
+        var champList = try? JSONDecoder().decode(ChampListModelResponse.self, from: Constant.champListMock)
+        completion(champList)
     }
     
     func getOneChamp(id: String, completion: @escaping (ChampDetailListResponse?) -> Void) {
