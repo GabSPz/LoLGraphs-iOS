@@ -8,7 +8,7 @@
 import Foundation
 
 class Constant {
-    static let isMock = true
+    static let isMock = false
     static let champListMock = [
         "Akali": ChampModelResponse(id: "Akali", nameChamp: "Akali"),
         "Zed": ChampModelResponse(id: "Zed", nameChamp: "Zed")
